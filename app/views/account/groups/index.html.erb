@@ -17,7 +17,7 @@
           <td>#</td>
           <td><%= link_to(group.title, group_path(group)) %></td>
           <td><%= group.description %></td>
-          <td><%= group.posts.count %></td>
+          <td><%= group.posts_count %></td>
           <td><%= group.updated_at %></td>
           <td><%= link_to('Edit', edit_account_group_path(group), class: "btn btn-info btn-xs") %></td>
           <td><%= link_to('Delete', account_group_path(group), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger btn-xs") %></td>
